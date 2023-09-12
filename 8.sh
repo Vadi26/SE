@@ -1,13 +1,16 @@
 #!/bin/bash
 
 echo "Enter marks for each subject (separated by spaces):"
-read marks
+read input
+
+array=" " read -ra $marks <<< "$input"
 
 total_marks=0
 count=0
-for mark in $marks; do
+for mark in "${marks[@]}"; do
   total_marks=$((total_marks + mark))
   count=$((count + 1))
+  echo total_marks
 done
 
 percentage=$((total_marks / count))
