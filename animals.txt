@@ -1,9 +1,0 @@
-Cat
-dog
-bear
-hello
-elephant
-hello
-tiger
-hello
-horse
